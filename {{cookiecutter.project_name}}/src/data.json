@@ -2,7 +2,23 @@
   "brandName": "{{ cookiecutter.brandName }}",
   "brandImage": "{{ cookiecutter.brandImage }}",
   "brandDescription": "{{ cookiecutter.brandDescription }}",
-  "specsData": {{ cookiecutter.specsData|tojson }},
-  "testimonialsData": {{ cookiecutter.testimonialsData|tojson }},
+  "specsData": [
+    {% for spec in cookiecutter.specsData %}
+    {
+      "title": "{{ spec.title }}",
+      "content": "{{ spec.content }}",
+      "imageUrl": "{{ spec.imageUrl }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  "testimonialsData": [
+    {% for testimonial in cookiecutter.testimonialsData %}
+    {
+      "name": "{{ testimonial.name }}",
+      "testimonial": "{{ testimonial.testimonial }}",
+      "image": "{{ testimonial.image }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
   "customersTestimonialsTitle": "{{ cookiecutter.customersTestimonialsTitle }}"
 }
