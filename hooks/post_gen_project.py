@@ -2,8 +2,8 @@ import json
 import os
 
 # Supongamos que estos son los parámetros que recibes en formato JSON
-specs_data = "{{ cookiecutter.specsData }}"
-testimonials_data = "{{ cookiecutter.testimonialsData }}"
+specs_data = '{{ cookiecutter.specsData }}'
+testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
 
 
