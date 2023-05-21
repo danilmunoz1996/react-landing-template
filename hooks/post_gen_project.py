@@ -11,8 +11,8 @@ print(testimonials_data)
 
 
 # Convirtiendo las cadenas a objetos de Python
-specs_data_obj = json.loads(specs_data)
-testimonials_data_obj = json.loads(testimonials_data)
+specs_data_obj = json.load(specs_data)
+testimonials_data_obj = json.load(testimonials_data)
 
 # Creando un diccionario con todos los datos
 data = {
