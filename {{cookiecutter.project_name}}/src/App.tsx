@@ -17,19 +17,43 @@ import data from './data.json'
 
 const App: React.FC = () => {
 
-  const specsData = data.specsData.map(spec => ({
-    ...spec,
-    imageUrl: {
-      'First Spec Item': firstSpecItemImage,
-      'Second Spec Item': secondSpecItemImage,
-      'Third Spec Item': thirdSpecItemImage,
-    }[spec.title] || '',
-  }));
+  const specsData = [
+    {
+      title: data.firstSpecTitle,
+      content: data.firstSpecContent,
+      imageUrl: firstSpecItemImage
+    },
+    {
+      title: data.secondSpecTitle,
+      content: data.secondSpecContent,
+      imageUrl: secondSpecItemImage
+    },
+    {
+      title: data.thirdSpecTitle,
+      content: data.thirdSpecContent,
+      imageUrl: thirdSpecItemImage
+    }
+  ];
 
-  const testimonialsData = data.testimonialsData.map(testimonial => ({
-    ...testimonial,
-    image: genericTestimonialImage
-  }));
+
+
+  const testimonialsData = [
+    {
+      name: data.firstTestimonialName,
+      content: data.firstTestimonialContent || '',
+      imageUrl: genericTestimonialImage || undefined
+    },
+    {
+      name: data.secondTestimonialName,
+      content: data.secondTestimonialContent || '',
+      imageUrl: genericTestimonialImage || undefined
+    },
+    {
+      name: data.thirdTestimonialName,
+      content: data.thirdTestimonialContent || '',
+      imageUrl: genericTestimonialImage || undefined
+    }
+  ];
 
   return (
     <>

@@ -2,12 +2,12 @@ import React from 'react';
 
 interface TestimonialProps {
     name: string;
-    testimonial: string;
+    content: string;
     image?: string;
     alignment: 'left' | 'right';
 }
 
-const Testimonial: React.FC<TestimonialProps> = ({ name, testimonial, image, alignment }) => {
+const Testimonial: React.FC<TestimonialProps> = ({ name, content, image, alignment }) => {
     const alignmentStyles = alignment === 'left' 
         ? 'md:mr-auto md:ml-0 justify-between md:ml-8' 
         : 'md:ml-auto md:mr-0 justify-between flex-row-reverse md:mr-8';
@@ -18,7 +18,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ name, testimonial, image, ali
                 {alignment === 'left' && image && <img className="w-16 h-16 rounded-full" src={image} alt={name} />}
                 <div>
                     <h2 className="text-lg text-white font-semibold">{name}</h2>
-                    <p className="text-sm text-white">{testimonial}</p>
+                    <p className="text-sm text-white">{content}</p>
                 </div>
                 {alignment === 'right' && image && <img className="w-16 h-16 rounded-full" src={image} alt={name} />}
             </div>

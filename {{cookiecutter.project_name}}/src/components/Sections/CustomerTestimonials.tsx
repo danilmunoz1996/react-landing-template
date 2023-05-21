@@ -3,7 +3,7 @@ import Testimonial from './Testimonial';
 
 interface TestimonialData {
     name: string;
-    testimonial: string;
+    content: string;
     image?: string;
 }
 
@@ -21,7 +21,7 @@ const CustomerTestimonials: React.FC<CustomerTestimonialsProps> = ({ title, test
                     <Testimonial
                         key={index}
                         name={testimonial.name}
-                        testimonial={testimonial.testimonial}
+                        content={testimonial.content}
                         image={testimonial.image}
                         alignment={index % 2 === 0 ? 'left' : 'right'} // Añade un alineamiento basado en si el índice es par o impar
                     />
