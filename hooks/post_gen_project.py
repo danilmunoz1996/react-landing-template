@@ -5,6 +5,9 @@ import os
 specs_data = '{{ cookiecutter.specsData }}'
 testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
+print(specs_data)
+print(testimonials_data)
+
 
 
 # Convirtiendo las cadenas a objetos de Python
