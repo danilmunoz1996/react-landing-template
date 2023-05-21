@@ -1,10 +1,10 @@
 {
-    "project_name": "project_name",
-    "brandName": "brandName",
-    "brandImage": "brandImage",
-    "brandDescription": "brandDescription",
-    "specsData": "specsData",
-    "testimonialsData": "testimonialsData",
-    "customersTestimonialsTitle": "customersTestimonialsTitle",
+    "project_name": "new_project",
+    "brandName": "Brand Name",
+    "brandImage": "./assets/images/aesthetic-image.jpeg",
+    "brandDescription": "Productos y servicios excepcionales. Atención meticulosa a los detalles. Experiencias gratificantes. Únete a nosotros y descubre la excelencia",
+    "specsData": [],
+    "testimonialsData": [],
+    "customersTestimonialsTitle": "Client's Testimonials",
     "author": "danilmunoz1996"
 }
