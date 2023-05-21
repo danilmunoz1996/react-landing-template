@@ -35,7 +35,7 @@ env = Environment(
     loader=FileSystemLoader('{{ cookiecutter._template }}'),
     autoescape=select_autoescape(['html', 'xml'])
 )
-template = env.get_template('src/copyData.json')
+template = env.get_template('cookiecutter.json')
 
 # Render the template with the Python dicts
 rendered_template = template.render(
@@ -50,5 +50,5 @@ rendered_template = template.render(
 )
 
 # Save the rendered template
-with open('src/data.json', 'w') as f:
+with open('cookiecutter.json', 'w') as f:
     f.write(rendered_template)
