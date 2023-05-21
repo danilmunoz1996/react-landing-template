@@ -5,19 +5,21 @@ import os
 specs_data = '{{ cookiecutter.specsData }}'
 testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
-print(specs_data)
-print(testimonials_data)
+print(specs_data[0])
 
-print('TYPE SPECS DATA: ', type(specs_data))
-print('TYPE TESTIMONIALS DATA: ', type(testimonials_data))
+
+
+# Convirtiendo las cadenas a objetos de Python
+specs_data_obj = json.loads(specs_data)
+testimonials_data_obj = json.loads(testimonials_data)
 
 # Creando un diccionario con todos los datos
 data = {
     "brandName": "{{ cookiecutter.brandName }}",
     "brandImage": "{{ cookiecutter.brandImage }}",
     "brandDescription": "{{ cookiecutter.brandDescription }}",
-    "specsData": specs_data["items"],
-    "testimonialsData": testimonials_data["items"],
+    "specsData": specs_data_obj["items"],
+    "testimonialsData": testimonials_data_obj["items"],
     "customersTestimonialsTitle": "{{ cookiecutter.customersTestimonialsTitle }}"
 }
 
