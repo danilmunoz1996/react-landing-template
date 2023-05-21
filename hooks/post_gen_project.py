@@ -5,14 +5,14 @@ import os
 specs_data = '{{ cookiecutter.specsData }}'
 testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
-print(specs_data)
-print(testimonials_data)
+print(len(specs_data))
+print(len(testimonials_data))
 
 
 
 # Convirtiendo las cadenas a objetos de Python
-specs_data_obj = json.load(specs_data)
-testimonials_data_obj = json.load(testimonials_data)
+specs_data_obj = json.loads(specs_data)
+testimonials_data_obj = json.loads(testimonials_data)
 
 # Creando un diccionario con todos los datos
 data = {
