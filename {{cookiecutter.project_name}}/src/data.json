@@ -3,7 +3,7 @@
   "brandImage": "{{ cookiecutter.brandImage }}",
   "brandDescription": "{{ cookiecutter.brandDescription }}",
   "specsData": [
-    {% for spec in cookiecutter.specsData %}
+    {% for spec in cookiecutter.specsData | fromjson.items %}
     {
       "title": "{{ spec.title }}",
       "content": "{{ spec.content }}",
@@ -12,7 +12,7 @@
     {% endfor %}
   ],
   "testimonialsData": [
-    {% for testimonial in cookiecutter.testimonialsData %}
+    {% for testimonial in cookiecutter.testimonialsData | fromjson.items %}
     {
       "name": "{{ testimonial.name }}",
       "testimonial": "{{ testimonial.testimonial }}",
