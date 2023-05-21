@@ -40,12 +40,12 @@ template = env.get_template('data.json')
 # Render the template with the Python dicts
 rendered_template = template.render(
     cookiecutter={
-        'brandName': '{{ cookiecutter.brandName }}',
-        'brandImage': '{{ cookiecutter.brandImage }}',
-        'brandDescription': '{{ cookiecutter.brandDescription }}',
+        'brandName': "{{ cookiecutter.brandName }}",
+        'brandImage': "{{ cookiecutter.brandImage }}",
+        'brandDescription': "{{ cookiecutter.brandDescription }}",
         'specsData': specsData['items'],
         'testimonialsData': testimonialsData['items'],
-        'customersTestimonialsTitle': '{{ cookiecutter.customersTestimonialsTitle }}',
+        'customersTestimonialsTitle': "{{ cookiecutter.customersTestimonialsTitle }}",
     }
 )
 
