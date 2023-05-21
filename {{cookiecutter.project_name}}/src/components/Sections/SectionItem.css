@@ -1,0 +1,33 @@
+/* SectionItem.css */
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  /* Puedes añadir más estilos de sección aquí si lo necesitas */
+}
+
+.image-left {
+  flex-direction: row;
+}
+
+.image-right {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 1rem; /* Agrega un margen derecho al contenido de texto */
+  /* Puedes añadir más estilos de texto aquí si lo necesitas */
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  max-width: 100%;
+  object-fit: cover;
+  padding-right: 1rem;
+}
