@@ -5,11 +5,6 @@ import os
 specs_data = '{{ cookiecutter.specsData }}'
 testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
-print(len(specs_data))
-print(len(testimonials_data))
-
-
-
 # Convirtiendo las cadenas a objetos de Python
 specs_data_obj = json.loads(specs_data)
 testimonials_data_obj = json.loads(testimonials_data)
@@ -25,5 +20,5 @@ data = {
 }
 
 # Creando el archivo data.json en el directorio src
-with open(os.path.join('{{ cookiecutter.project_name }}', 'src', 'data.json'), 'w') as f:
+with open(os.path.join('{{ cookiecutter.project_name }}', 'src', 'copyData.json'), 'w') as f:
     json.dump(data, f, indent=4)
