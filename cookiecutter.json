@@ -3,8 +3,8 @@
     "brandName": "Brand Name",
     "brandImage": "./assets/images/aesthetic-image.jpeg",
     "brandDescription": "Productos y servicios excepcionales. Atención meticulosa a los detalles. Experiencias gratificantes. Únete a nosotros y descubre la excelencia",
-    "specsData": [],
-    "testimonialsData": [],
+    "specsData": {"items": []},
+    "testimonialsData": {"items": []},
     "customersTestimonialsTitle": "Client's Testimonials",
     "author": "danilmunoz1996"
 }
