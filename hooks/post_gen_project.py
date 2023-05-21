@@ -24,10 +24,6 @@ data = {
     "customersTestimonialsTitle": "{{ cookiecutter.customersTestimonialsTitle }}"
 }
 
-# Comprobar si el directorio existe, si no, crearlo
-dir_path = os.path.join('{{ cookiecutter.project_name }}', 'src')
-os.makedirs(dir_path, exist_ok=True)
-
 # Creando el archivo data.json en el directorio src
-with open(os.path.join(dir_path, 'data.json'), 'w') as f:
+with open(os.path.join('{{ cookiecutter.project_name }}', 'src', 'data.json'), 'w') as f:
     json.dump(data, f, indent=4)
