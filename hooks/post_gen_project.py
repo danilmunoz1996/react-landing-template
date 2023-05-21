@@ -5,6 +5,12 @@ import os
 specs_data = '{{ cookiecutter.specsData }}'
 testimonials_data = '{{ cookiecutter.testimonialsData }}'
 
+print(specs_data)
+print(testimonials_data)
+
+print('TYPE SPECS DATA: ', type(specs_data))
+print('TYPE TESTIMONIALS DATA: ', type(testimonials_data))
+
 # Creando un diccionario con todos los datos
 data = {
     "brandName": "{{ cookiecutter.brandName }}",
