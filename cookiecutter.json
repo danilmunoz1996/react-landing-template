@@ -1,4 +1,10 @@
 {
-    "project_name": "landing-template",
+    "project_name": "project_name",
+    "brandName": "brandName",
+    "brandImage": "brandImage",
+    "brandDescription": "brandDescription",
+    "specsData": "specsData",
+    "testimonialsData": "testimonialsData",
+    "customersTestimonialsTitle": "customersTestimonialsTitle",
     "author": "danilmunoz1996"
 }

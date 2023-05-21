@@ -1,0 +1,40 @@
+{
+    "brandName": "Brand Name",
+    "brandImage": "./assets/images/aesthetic-image.jpeg",
+    "brandDescription": "Productos y servicios excepcionales. Atención meticulosa a los detalles. Experiencias gratificantes. Únete a nosotros y descubre la excelencia",
+    "specsData": [
+      {
+        "title": "First Spec Item",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet massa. Sed feugiat, diam id aliquam ultrices, nunc ipsum ultrices nunc, vitae aliquam nunc nisi quis nunc. Sed vitae nunc vitae nunc aliquet aliquam. Sed vitae nunc vitae nunc aliquet aliquam.",
+        "imageUrl": "./assets/images/aesthetic-mountain-image.jpeg"
+      },
+      {
+        "title": "Second Spec Item",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet massa. Sed feugiat, diam id aliquam ultrices, nunc ipsum ultrices nunc, vitae aliquam nunc nisi quis nunc. Sed vitae nunc vitae nunc aliquet aliquam. Sed vitae nunc vitae nunc aliquet aliquam.",
+        "imageUrl": "./assets/images/main-subject-image.jpg"
+      },
+      {
+        "title": "Third Spec Item",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec aliquet massa. Sed feugiat, diam id aliquam ultrices, nunc ipsum ultrices nunc, vitae aliquam nunc nisi quis nunc. Sed vitae nunc vitae nunc aliquet aliquam. Sed vitae nunc vitae nunc aliquet aliquam.",
+        "imageUrl": "./assets/images/aesthetic-pattern-image.jpg"
+      }
+    ],
+    "testimonialsData": [
+      {
+        "name": "John Doe",
+        "testimonial": "Este es un excelente producto, lo recomiendo mucho.",
+        "image": "./assets/images/generic-man-profile-image.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "testimonial": "El servicio al cliente fue increíble. Sin duda compraré de nuevo.",
+        "image": "./assets/images/generic-man-profile-image.jpg"
+      },
+      {
+        "name": "James Doe",
+        "testimonial": "Este es un excelente producto, lo recomiendo mucho.",
+        "image": "./assets/images/generic-man-profile-image.jpg"
+      }
+    ],
+    "customersTestimonialsTitle": "Client's Testimonials"
+}  
