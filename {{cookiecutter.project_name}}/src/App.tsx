@@ -7,9 +7,6 @@ import CustomerTestimonials from './components/Sections/CustomerTestimonials'
 
 
 import aestheticImage from './assets/images/aesthetic-image.jpg'
-import firstSpecItemImage from './assets/images/aesthetic-mountain-image.jpg'
-import secondSpecItemImage from './assets/images/generic-image.jpeg'
-import thirdSpecItemImage from './assets/images/aesthetic-pattern-image.jpg'
 
 import genericTestimonialImage from './assets/images/generic-man-profile-image.jpg'
 
