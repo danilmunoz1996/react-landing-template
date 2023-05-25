@@ -21,17 +21,17 @@ const App: React.FC = () => {
     {
       title: data.firstSpecTitle,
       content: data.firstSpecContent,
-      imageUrl: firstSpecItemImage
+      imageUrl: data.firstSpecImg
     },
     {
       title: data.secondSpecTitle,
       content: data.secondSpecContent,
-      imageUrl: secondSpecItemImage
+      imageUrl: data.secondSpecImg
     },
     {
       title: data.thirdSpecTitle,
       content: data.thirdSpecContent,
-      imageUrl: thirdSpecItemImage
+      imageUrl: data.thirdSpecImg
     }
   ];
 
