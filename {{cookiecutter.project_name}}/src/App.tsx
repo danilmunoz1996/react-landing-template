@@ -5,9 +5,6 @@ import MainSection from './components/Sections/MainSection'
 import SpecsSection from './components/Sections/SpecsSection'
 import CustomerTestimonials from './components/Sections/CustomerTestimonials'
 
-
-import aestheticImage from './assets/images/aesthetic-image.jpg'
-
 import genericTestimonialImage from './assets/images/generic-man-profile-image.jpg'
 
 import data from './data.json'
@@ -59,7 +56,7 @@ const App: React.FC = () => {
             <MainSection
               title={data.brandName}
               description={data.brandDescription}
-              imageUrl={aestheticImage}
+              imageUrl={data.brandImage}
             />
             <SpecsSection
               specs={specsData}
