@@ -1,10 +1,5 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react';
 
-interface State {
-  email: string;
-  phone: string;
-}
-
 const NewsletterSubscription: React.FC = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
