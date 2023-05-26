@@ -1,14 +1,17 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent } from 'react';
 
 const NewsletterSubscription: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+
+  const [email, setEmail] = React.useState('');
+  const [phone, setPhone] = React.useState('');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    console.log('event.target.value: ' + event.target.value);
     setEmail(event.target.value);
   };
 
   const handlePhoneChange = (event: ChangeEvent<HTMLInputElement>): void => {
+    console.log('event.target.value: ' + event.target.value);
     setPhone(event.target.value);
   };
 
