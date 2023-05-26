@@ -10,8 +10,8 @@ import NewsletterSubscription from './components/Sections/NewsletterSubscription
 
 import genericTestimonialImage from './assets/images/generic-man-profile-image.jpg'
 
-// import data from './data.json'
-import data from './copyData.json'
+import data from './data.json'
+// import data from './copyData.json'
 
 const App: React.FC = () => {
 
