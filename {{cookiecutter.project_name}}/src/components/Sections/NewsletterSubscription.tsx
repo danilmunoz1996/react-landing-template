@@ -3,40 +3,47 @@ import React from 'react';
 const NewsletterSubscription: React.FC = () => {
 
   return (
-    <div className="container-fluid bg-light py-5">
+    <div className="container-fluid bg-light py-5" style={{backgroundImage: "url('assets/images/newsletter-background.jpg')"}}>
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 className="text-center mb-4">Solicita Atención y nos pondremos en contacto</h2>
           <form>
-            <div className="input-group mb-3">
+            <div className="form-group">
+              <label htmlFor="emailInput">Email</label>
               <input
                 type="email"
                 className="form-control"
-                placeholder="Email"
-                aria-label="Email"
-                aria-describedby="button-addon2"
-                value=""
+                id="emailInput"
+                placeholder="Ingresa tu correo electrónico"
+                aria-describedby="emailHelp"
                 required
               />
+              <small id="emailHelp" className="form-text text-muted">No compartiremos tu correo electrónico con nadie más.</small>
             </div>
-            <div>
+            <div className="form-group">
+              <label htmlFor="phoneInput">Número de Teléfono o WhatsApp</label>
               <input
                 type="text"
                 className="form-control"
-                placeholder="Numero de Telefono o WhatsApp"
-                aria-label="Numero de Telefono o WhatsApp"
-                aria-describedby="button-addon2"
-                value=""
+                id="phoneInput"
+                placeholder="Ingresa tu número de teléfono o WhatsApp"
+                aria-describedby="phoneHelp"
                 required
               />
-              <button className="btn btn-primary" type="submit" id="button-addon2">
-                Solicitar Atención por WhatsApp
-              </button>
+              <small id="phoneHelp" className="form-text text-muted">No compartiremos tu número de teléfono con nadie más.</small>
             </div>
+            <button className="btn btn-primary btn-block" type="submit">
+              Suscribirse
+            </button>
           </form>
         </div>
       </div>
-      <img src="assets/images/aesthetic-image.jpeg" alt=""/>
+      <div className="row justify-content-center mt-4">
+        <div className="col-md-6 text-center">
+          <img src="assets/images/aesthetic-image.jpg" alt=""/>
+          <p className="mt-3">Mantente al día con nuestras últimas noticias y ofertas especiales.</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -54,7 +54,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid min-vh-100'>
         <MainSection
           title={data.brandName}
           description={data.brandDescription}
