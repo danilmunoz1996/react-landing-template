@@ -3,7 +3,7 @@ import React from 'react';
 const NewsletterSubscription: React.FC = () => {
 
   return (
-    <div className="container-fluid bg-light py-5" style={{backgroundImage: "url('assets/images/newsletter-background.jpg')"}}>
+    <div className="container-fluid bg-light py-5" style={{backgroundImage: "url('assets/images/aesthetic-image.jpg')"}}>
       <div className="row justify-content-center">
         <div className="col-md-6">
           <h2 className="text-center mb-4">Solicita Atención y nos pondremos en contacto</h2>
