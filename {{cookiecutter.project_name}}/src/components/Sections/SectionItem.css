@@ -8,6 +8,12 @@
   /* Puedes añadir más estilos de sección aquí si lo necesitas */
 }
 
+.section img {
+  max-width: 100%;
+  object-fit: cover;
+  padding-right: 1rem;
+}
+
 .image-left {
   flex-direction: row;
 }
